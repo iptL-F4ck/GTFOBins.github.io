@@ -13,4 +13,8 @@ functions:
         screen -L $LFILE echo DATA
   sudo:
     - code: sudo screen
+  suid:
+    - code: |
+        export TERM=xterm
+        screen -x root/root
 ---
