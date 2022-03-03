@@ -4,6 +4,9 @@ functions:
     - description: |
         It runs commands using a specially crafted Snap package. Generate it with [fpm](https://github.com/jordansissel/fpm) and upload it to the target.
         ```
+        # install fpm
+        sudo gem install fpm
+        
         COMMAND=id
         cd $(mktemp -d)
         mkdir -p meta/hooks
